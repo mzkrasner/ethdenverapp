@@ -19,7 +19,7 @@ const ceramic = new CeramicClient("http://localhost:7007");
  * @return {Promise<void>} - return void when composite finishes deploying.
  */
 export const writeComposite = async (spinner) => {
-  await authenticate();
+  // await authenticate();
   const profileComposite = await createComposite(
     ceramic,
     "./composites/00-basicProfile.graphql"
