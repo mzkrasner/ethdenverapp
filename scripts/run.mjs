@@ -30,7 +30,7 @@ const bootstrap = async () => {
     spinner.succeed("Composites] composites bootstrapped");
   } catch (err) {
     spinner.fail(err.message)
-    ceramic.kill()
+    // ceramic.kill()
     throw err
   }
 }
@@ -67,7 +67,7 @@ const start = async () => {
       // }
     // })
   } catch (err) {
-    ceramic.kill()
+    // ceramic.kill()
     spinner.fail(err)
   }
 }
